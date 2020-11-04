@@ -13,6 +13,10 @@ body{
     opacity: 1;
 }
 
+a{
+    text-decoration: none;
+}
+
 .img-responsive{
     width: 100%;
     height: auto;
@@ -92,7 +96,6 @@ header{
     width: 100%;
     max-width: 1300px;
     
-
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -107,18 +110,15 @@ header{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: right;
-    
-    font: normal normal lighter 50px DINProBold;
-    font-weight: bold;
-    text-transform: uppercase;  
 }
 
 .logoStore{
+    margin-left: 20px;
     width: 270px;
 }
 
 .logoHeader{
-    width: 70%;
+    width: 500px;
     height: auto;
 }
 
@@ -127,34 +127,21 @@ header{
 }
 
 .infosHeader{
+    margin-right: 40px;
     align-items: center;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    /*margin-right: 20%;*/
 }
 
 .phone{
     font: normal normal bold 32px RobotoBold;
 }
 
-@media only screen and (max-width: 900px){
-    .infosStore{
-        font: normal normal lighter 35px DINProBold;
-    }
-}
-
-@media only screen and (max-width: 750px){
-    .infosStore{
-        font: normal normal lighter 25px DINProBold;
-    }
-}
-
-@media only screen and (max-width: 650px){
-    .header{
-        flex-direction: column;
-        margin-bottom: 10px;
+@media only screen and (max-width: 1150px){
+    .logoStore{
+        width: 200px;
     }
 }
 
@@ -220,7 +207,7 @@ footer{
 }
 
 .imgBanner{
-    align-items: center;
+    align-items: flex-end;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -232,7 +219,26 @@ footer{
 }
 
 #setaBanner{
-    width: 50%;
+    width: 100px;
+}
+
+@media only screen and (max-width: 1270px){
+    .infosBanner p{
+        font: normal normal lighter 40px RobotoLight;
+    }
+    .imgBanner {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 720px){
+    .banner{
+        flex-direction: column;
+    }
+    .imgBanner {
+        width: 60%;
+        align-items: center;
+    }
 }
 
 /* Informacoes */
