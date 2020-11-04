@@ -342,10 +342,12 @@ footer{
 
 #infosPlantao{
     margin-top: 20px;
-    
+
     font: normal normal bold 25px RobotoRegular;
 }
 
 #infosHorario{
+    margin-bottom: 60px;
+
     font: normal normal lighter 25px RobotoLight;
 }
