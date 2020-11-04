@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Título da página</title>
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <!-- Icones -->
+    <script src="https://kit.fontawesome.com/bd6bc53c42.js" crossorigin="anonymous"></script> 
+    <meta charset="utf-8">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="header">
+            <div class="infosStore">
+                <img class="logoStore" src="contents/logo.png" alt="ACDelco">
+            </div>
+            <div class="infosHeader">
+                <img class="logoHeader" src="contents/Logo topo.png" alt="ACDelco">
+                <p class="phone"><img class="wppHeader" src="contents/wpp.png" alt="wpp">&nbsp;(34) 99900-8400 - (34) 3214-8400</p>
+            </div>  
+        </div>
+    </header>
+
+    <!-- Corpo da página -->
+    <div class="background">
+        <div id="page-landing">
+            <div class="content-wrapper">
+                <!-- Banner -->
+                <div class="banner">
+                    <div class="infosBanner">
+                        <p id="marcaLider">Marca líder mundial</p>
+                        <p style="color: #FFFFFF;">No fornecimento de <br> peças automotivas</p>
+                    </div>
+                    <div class="imgBanner">
+                        <img src="contents/Bateria.png" alt="Bateria">
+                    </div>
+                    <div>
+                        <img id="setaBanner" src="contents/Objeto Inteligente de Vetor-1.png">
+                    </div>  
+                </div>
+
+                <!-- Informacoes -->
+                <div class="infos">
+                    <img id="logoBody" src="contents/Logo com shape.png">
+                    <p id="revendedoraAutorizada">Revendedora autorizada</p>
+                    <img id="logoStoreBody" src="contents/logo.png" alt="ACDelco">
+                    <img class="linha" src="contents/Retângulo Arredondado 5.png">
+                    <p id="servicoRapido">Serviço rápido com <br> melhor preço</p>
+                    <img class="img-responsive" src="contents/fotos.png" alt="Loja">
+                    <p id="especializada">Especializada em <b>trocas de baterias</b> e <b>serviço de urgência</b></p>
+                    <img class="img-responsive" src="contents/Agrupar 4.png" alt="Baterias">
+                    <p class="textBackground">Onde Encontrar</b></p>
+                    <p id="endereco">Av. João Naves de Ávila, 1590 <br> <b>Uberlândia - MG</b></p>
+                    <!-- Mapa -->
+                    <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3774.411305365731!2d-48.26056339567746!3d-18.913180092751663!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1aa6f08a981e34dc!2sBaterias%20Express%20Uberl%C3%A2ndia!5e0!3m2!1spt-BR!2sbr!4v1604428101545!5m2!1spt-BR!2sbr" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            <div class="infosFooter">
+                <p>FALE CONOSCO:</p>
+                <p>Ligue para:</p>
+                <p><label>(34) 99900-8400</label>&nbsp;&nbsp;&nbsp;<label>(34) 3214-8400</label></p>
+                <p>Whatsapp com <b>plantão 24h</b>, inclusive aos finais de semana para <b>Moto Socorro</b>.</p>
+                <p>Segunda à sextas das 08:00 às 18:00 e sábado das 08:00 às 12:00</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Push no dataLayer com nome da loja -->
+    <script type="text/javascript">
+    window.onload = function(){
+        if(typeof dataLayer != "undefined"){
+            dataLayer.push({
+                'event': 'nameDealer',
+                'name': 'João Baterias'
+            });
+        }
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,326 @@
+/* Informações Gerais */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 0px;
+    color: #0060A9;
+    opacity: 1;
+}
+
+body{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.img-responsive{
+    width: 100%;
+    height: auto;
+}
+
+#page-landing{
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-wrapper{
+    position: relative;
+    text-align: center;
+
+    width: 100%;
+    max-width: 1300px;
+}
+
+.background{
+    position: relative;
+    /*z-index: 1;*/
+}
+
+.background:before{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url(contents/BG.png) center center;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Fontes */
+@font-face{
+    font-family: RobotoBold;
+    src: url(contents/fonts/Roboto-Bold.ttf);
+}
+
+@font-face{
+    font-family: RobotoMedium;
+    src: url(contents/fonts/Roboto-Medium.ttf);
+}
+
+@font-face{
+    font-family: RobotoRegular;
+    src: url(contents/fonts/Roboto-Regular.ttf);
+}
+
+@font-face{
+    font-family: RobotoLight;
+    src: url(contents/fonts/Roboto-Light.ttf);
+}
+
+/* Header */
+header{
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    -webkit-box-shadow: 0px 11px 17px 0px rgba(50, 50, 50, 0.32);
+    -moz-box-shadow:    0px 11px 17px 0px rgba(50, 50, 50, 0.32);
+    box-shadow:         0px 11px 17px 0px rgba(50, 50, 50, 0.32);
+}
+
+.header{  
+    position: relative;
+    
+    width: 100%;
+    max-width: 1300px;
+    
+
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.infosStore{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: right;
+    
+    font: normal normal lighter 50px DINProBold;
+    font-weight: bold;
+    text-transform: uppercase;  
+}
+
+.logoStore{
+    width: 270px;
+}
+
+.logoHeader{
+    width: 70%;
+    height: auto;
+}
+
+.wppHeader{
+    width: 25px;
+}
+
+.infosHeader{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    /*margin-right: 20%;*/
+}
+
+.phone{
+    font: normal normal bold 32px RobotoBold;
+}
+
+@media only screen and (max-width: 900px){
+    .infosStore{
+        font: normal normal lighter 35px DINProBold;
+    }
+}
+
+@media only screen and (max-width: 750px){
+    .infosStore{
+        font: normal normal lighter 25px DINProBold;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .header{
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+}
+
+/* Footer */
+footer{
+    margin-top: 20px;
+    background-color: #FFFFFF;
+
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
+    position: relative;
+    
+    width: 100%;
+    max-width: 1300px;
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.infosFooter{
+    text-align: center;
+    font: normal normal lighter 20px RobotoLight;
+}
+
+.imgFooter{
+    width: 350px;
+}
+
+/* Banner */
+.banner{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    position: relative;
+
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.infosBanner{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: right;
+
+    font: normal normal lighter 60px RobotoLight;
+    font-weight: lighter;
+    text-transform: uppercase;  
+    text-align: center;
+}
+
+#marcaLider{
+    padding: 0 10px 0 10px;
+    
+    background-color: #FFFFFF;
+}
+
+.imgBanner{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imgBanner img{
+    width: 75%;
+}
+
+#setaBanner{
+    width: 50%;
+}
+
+/* Informacoes */
+.infos{
+    width: 100%;
+    max-width: 950px;
+    padding: 5% 2% 0% 2%;
+    
+    background-color: #FFFFFF;
+    border-radius: 7px;
+
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+#logoBody{
+    width: 65%;
+    height: auto;
+}
+
+#revendedoraAutorizada{
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    font: normal normal lighter 45px RobotoLight;
+}
+
+#logoStoreBody{
+    width: 30%;
+    height: auto;
+}
+
+.linha{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#servicoRapido{
+    text-align: center;
+    margin-bottom: 40px;
+
+    font: normal normal bold 80px RobotoBold;
+}
+
+#especializada{
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 60px;
+
+    font: normal normal normal 50px RobotoRegular;
+}
+
+.textBackground{
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    background-color: #0060A9;
+    color: #FFFFFF;
+    padding: 10px 80px 10px 80px;
+    margin-bottom: 25px;
+
+    font: normal normal bold 50px RobotoRegular;
+}
+
+#endereco{
+    text-align: center;
+    letter-spacing: .40rem;
+    margin-bottom: 25px; 
+
+    font: normal normal normal 50px RobotoRegular;
+}
+
+#endereco b{
+    letter-spacing: .5rem !important;
+
+    font: normal normal bold 50px RobotoBold; 
+}
+
+/* Mapa */
+#map{
+    width: 100%;
+    height: 600px;
+
+    margin-bottom: 20px;
+}
