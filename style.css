@@ -185,11 +185,6 @@ footer{
 
 .infosFooter{
     text-align: center;
-    font: normal normal lighter 20px RobotoLight;
-}
-
-.imgFooter{
-    width: 350px;
 }
 
 /* Banner */
@@ -294,12 +289,14 @@ footer{
 
 .textBackground{
     text-transform: uppercase;
-    letter-spacing: .5rem;
     background-color: #0060A9;
     color: #FFFFFF;
-    padding: 10px 80px 10px 80px;
     margin-bottom: 25px;
+}
 
+.infos .textBackground{
+    letter-spacing: .5rem;
+    padding: 10px 80px 10px 80px;
     font: normal normal bold 50px RobotoRegular;
 }
 
@@ -323,4 +320,32 @@ footer{
     height: 600px;
 
     margin-bottom: 20px;
+}
+
+/* Infos Footer */
+#faleConosco{
+    font: normal normal bold 95px RobotoBold; 
+}
+
+#liguePara{
+    margin-bottom: 20px;
+
+    font: normal normal bold 50px RobotoBold; 
+}
+
+.infosFooter .textBackground{
+    letter-spacing: .2rem;
+    padding: 5px 5px 5px 5px;
+
+    font: normal normal normal 30px RobotoRegular;
+}
+
+#infosPlantao{
+    margin-top: 20px;
+    
+    font: normal normal bold 25px RobotoRegular;
+}
+
+#infosHorario{
+    font: normal normal lighter 25px RobotoLight;
 }
